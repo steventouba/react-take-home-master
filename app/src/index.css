@@ -1,0 +1,82 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+.card {
+  margin: 30px;
+}
+
+.card-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header-info {
+  margin-left: 10px;
+}
+
+.header-info > h4 {
+  color: green;
+}
+
+.card-header img {
+  height: 100px;
+  width: 100px;
+}
+
+.horizontal-scroll {
+  overflow: auto;
+  white-space: nowrap;
+}
+
+.media-card {
+  display: inline-block;
+  text-align: center;
+  padding: 14px;
+  text-decoration: none;
+}
+
+.media-preview {
+  position: relative;
+}
+
+.play-button {
+  position: absolute;
+  z-index: 100;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+.play-button > i {
+  font-size: 50px;
+  color: white;
+  opacity: 75%;
+}
+
+.media-preview > img {
+  max-height: 400px;
+  max-width: 200px;
+}
+
+[name="media-button"] {
+  width: 50%;
+  background: transparent;
+  border: 1px solid rgba($color: lightgray, $alpha: 0.25);
+}
+
+[name="media-button"] > i {
+  background: transparent;
+  color: gray;
+}
